@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/tvMon"
+        android:text="@string/mon"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/tvTue"
+        android:layout_toRightOf="@id/tvMon"
+        android:text="@string/tue"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/tvWed"
+        android:layout_toRightOf="@id/tvTue"
+        android:text="@string/wed"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/tvThu"
+        android:layout_toRightOf="@id/tvWed"
+        android:text="@string/thu"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/tvFri"
+        android:layout_toRightOf="@id/tvThu"
+        android:text="@string/fri"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/tvSat"
+        android:layout_toRightOf="@id/tvFri"
+        android:text="@string/sat"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/tvSun"
+        android:layout_toRightOf="@id/tvSat"
+        android:text="@string/sun"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tvMon"
+        android:id="@+id/vblank"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvcalendar"
+        android:layout_below="@id/vblank"/>
+</RelativeLayout>
